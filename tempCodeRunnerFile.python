@@ -1,0 +1,33 @@
+# calculadora_simples.py
+
+def soma(a, b):
+    return a + b
+
+def subtrai(a, b):
+    return a - b
+
+def multiplica(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Erro: divisão por zero!"
+    return a / b
+
+print("=== Calculadora Simples ===")
+a = float(input("Primeiro número: "))
+b = float(input("Segundo número: "))
+
+print("Operações disponíveis: +  -  *  /")
+operacao = input("Escolhe uma operação: ")
+
+if operacao == "+":
+    print("Resultado:", soma(a, b))
+elif operacao == "-":
+    print("Resultado:", subtrai(a, b))
+elif operacao == "*":
+    print("Resultado:", multiplica(a, b))
+elif operacao == "/":
+    print("Resultado:", divide(a, b))
+else:
+    print("Operação inválida!")
